@@ -1,0 +1,74 @@
+/* style.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(145deg, #0f2d3f, #1e4860);
+  color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,0.04);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 2px solid #31b9e9;
+}
+
+h1 {
+  font-size: 28px;
+  color: #f9f9f9;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #7cc4e4;
+  margin-bottom: 30px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn.whatsapp {
+  background-color: #25d366;
+}
+
+.btn.whatsapp:hover {
+  background-color: #1da851;
+}
+
+.btn.tiktok {
+  background-color: #010101;
+}
+
+.btn.tiktok:hover {
+  background-color: #333333;
+}
