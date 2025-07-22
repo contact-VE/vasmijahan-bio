@@ -1,50 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vasmijahan | English Instructor</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="VCM2.png">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vasmijahan | Link in Bio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div class="background-animation"></div>
+  <div id="bg">
+    <canvas id="particles"></canvas>
+  </div>
 
-  <div class="container">
+  <main class="container">
     <div class="profile">
-      <img src="vasmijahan-logo.png" alt="Vasmijahan Profile" class="profile-img">
+      <img src="vasmijahan.jpg" alt="Vasmijahan" class="profile-pic" />
       <h1>Vasmijahan Mammadova</h1>
-      <p class="subtitle">Professional English Instructor</p>
+      <p>English Instructor</p>
     </div>
 
     <div class="links">
-      <a href="https://wa.me/message/SKYKFB2FAVFWN" target="_blank" class="link-button">
-        <i class="fab fa-whatsapp"></i>
+      <a href="https://wa.me/message/SKYKFB2FAVFWN1" class="btn whatsapp" target="_blank">
+        <img src="icons/whatsapp.svg" alt="WhatsApp" />
         WhatsApp
       </a>
-      <a href="https://www.tiktok.com/@vasmijahan.english?_t=ZS-8yEvERKcw5p&_r=1" target="_blank" class="link-button">
-        <i class="fab fa-tiktok"></i>
+      <a href="https://www.tiktok.com/@vasmijahan.english?_t=ZS-8yEvERKcw5p&_r=1" class="btn tiktok" target="_blank">
+        <img src="icons/tiktok.svg" alt="TikTok" />
         TikTok
       </a>
     </div>
 
-    <div class="footer">
-      <p>&copy; 2025 Vasmijahan. All rights reserved.</p>
-    </div>
-  </div>
+    <footer>
+      © All rights reserved | Vasmijahan
+    </footer>
+  </main>
 
-  <script>
-    const bg = document.querySelector('.background-animation');
-    document.body.addEventListener('mousemove', e => {
-      const x = e.clientX / window.innerWidth - 0.5;
-      const y = e.clientY / window.innerHeight - 0.5;
-      bg.style.transform = `translate(${x * 20}px, ${y * 20}px)`;
-    });
-  </script>
+  <script src="particles.js"></script>
 </body>
-
 </html>
